@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="435.0" prefWidth="692.0" style="-fx-background-color: #3F72AF;" stylesheets="@Button.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.registrationController">
+    <children>
+        <AnchorPane layoutY="121.0" prefHeight="313.0" prefWidth="692.0" style="-fx-background-color: #FFFFFF;">
+            <children>
+            <ButtonBar layoutX="13.0" layoutY="9.0" prefHeight="40.0" prefWidth="200.0" />
+                <PasswordField fx:id="password_field" layoutX="378.0" layoutY="53.0" prefHeight="36.0" prefWidth="278.0" promptText="Password">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </PasswordField>
+                <TextField fx:id="user_field" layoutX="33.0" layoutY="53.0" prefHeight="40.0" prefWidth="278.0" promptText="Username" />
+                <Label layoutX="239.0" layoutY="14.0" prefHeight="28.0" prefWidth="242.0" text="    Create your Account" textFill="#3f72af">
+                    <font>
+                        <Font name="Arial" size="21.0" />
+                    </font>
+                </Label>
+            <TextField fx:id="email_field" layoutX="33.0" layoutY="110.0" prefHeight="40.0" prefWidth="278.0" promptText="Email" />
+            <TextField fx:id="phone_number_field" layoutX="378.0" layoutY="110.0" prefHeight="36.0" prefWidth="278.0" promptText="Phone Number" />
+            <Button fx:id="create_account_button" layoutX="285.0" layoutY="198.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="143.0" style="-fx-background-color: #3F72AF;" text="Create Account" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Button>
+            <RadioButton fx:id="male_button" layoutX="269.0" layoutY="168.0" mnemonicParsing="false" text="Male">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="female_button" layoutX="369.0" layoutY="168.0" mnemonicParsing="false" text="Female">
+               <font>
+                  <Font name="Arial Bold" size="13.0" />
+               </font>
+            </RadioButton>
+            </children>
+        </AnchorPane>
+        <Label alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="277.0" layoutY="27.0" prefHeight="58.0" prefWidth="185.0" text="  litbook" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Arial" size="50.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="65.0" fitWidth="69.0" layoutX="243.0" layoutY="24.0">
+            <image>
+                <Image url="@../../../images/2323.png" />
+            </image>
+        </ImageView>
+    <Button fx:id="back_id" layoutY="6.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="76.0" style="-fx-background-color: #3F72AF;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
